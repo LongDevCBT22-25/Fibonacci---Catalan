@@ -5,7 +5,7 @@ int sol(int n){
     int fn, fn1 = 1, fn2 = 1;
     for (int i = 3; i <= n; i++) {
         fn = fn1 + fn2;
-        swap(fn, fn1);
+        fn1 = fn;
         swap(fn1, fn2);
     }
     return fn2;
